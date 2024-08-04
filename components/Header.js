@@ -1,5 +1,6 @@
 // components/Header.js
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Header = () => {
     return (
@@ -7,7 +8,7 @@ const Header = () => {
             <nav className="navbar navbar-expand-lg shadow-sm scrolled bg-dark" style={{ background: 'linear-gradient(45deg,#f6ebe7  68%,#003364  50%)' }}>
                 <div className="container">
                     <Link className="navbar-brand right1" href="#"> 
-                        <img src="/img/logo.png" className="img-fluid logo" alt="Logo" style={{ maxHeight: '60px' }} />
+                        <Image src="/img/logo.png" className="img-fluid logo" alt="Logo" style={{ maxHeight: '60px' }}  width={145} height={60} />
                     </Link>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

@@ -1,6 +1,7 @@
 // pages/index.js
 import Head from 'next/head';
-import Bank from '../components/Bank';
+import Image from 'next/image';
+/*import Bank from '../components/Bank';*/
 
 export default function Home() {
   return (
@@ -10,7 +11,7 @@ export default function Home() {
       <meta name="description" content="Description of the home page" />
     </Head>
     <section style={{marginTop : '80px'}}>
-        <img src="/img/banner.jpg" className="w-100" alt="Easy Swipe" />
+        <Image src="/img/banner.jpg" className="w-100" alt="Easy Swipe" width={1920} height={827} />
         <a data-bs-target="#exampleModal1" data-bs-toggle="modal" title="" style={{
                 position: 'absolute',
                 left: '51%',
@@ -29,7 +30,7 @@ export default function Home() {
                 </div>
 
                 <div className="col-md-6 text-center ">
-                    <img src="/img/About-C2C.jpg" data-aos="fade-right" data-aos-duration="1500" alt="" className="img-fluid mb-2 p-3" />
+                    <Image src="/img/About-C2C.jpg" data-aos="fade-right" data-aos-duration="1500" alt="" className="img-fluid mb-2 p-3" width={705} height={429} />
                 </div>
                 <div className="col-md-6  d-flex align-content-center align-items-center" data-aos="fade-left" data-aos-duration="1500">
                     <div>
@@ -63,7 +64,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-right" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/Fast-Approval.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Fast-Approval.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Swift Approval</p>
                                 <p className="text-dark">Get instant cash against your credit card with rapid approval! Our seamless process ensures you receive secure spot cash for your urgent needs in Bangalore, quickly and efficiently.
                                 </p>
@@ -74,7 +75,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/No-Hidden-Fees.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/No-Hidden-Fees.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">No Hidden Fees</p>
                                 <p className="text-dark">Enjoy immediate cash against your credit card with complete transparency. We pride ourselves on a hassle-free process with no hidden fees, making it easy to access emergency funds.
                                 </p>
@@ -85,7 +86,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-left" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/Secure-Transaction.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Secure-Transaction.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Secure Transaction</p>
                                 <p className="text-dark">Trust in our secure transaction process. Easy Swipe offers instant cash against your credit card in Bangalore with guaranteed security, ensuring your financial safety at every step.
                                 </p>
@@ -96,7 +97,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-right" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/Low-Interest-Rate.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Low-Interest-Rate.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Competitive Interest Rate</p>
                                 <p className="text-dark">Benefit from our low interest rate of just 2%*. We provide affordable and reliable financial assistance, offering quick cash against your credit card to meet your urgent needs.
                                 </p>
@@ -107,7 +108,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/Flexible-Repayment-Options.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Flexible-Repayment-Options.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Flexible Repayment Plans</p>
                                 <p className="text-dark">Take advantage of our flexible repayment options. Easy Swipe offers tailored solutions to fit your financial convenience, making it easier to manage your cash flow.
                                 </p>
@@ -118,7 +119,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-left" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <img src="/img/24x7.png" alt="" className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/24x7.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">24/7 Customer Support</p>
                                 <p className="text-dark">Access 24/7 customer support for all your needs. Whether you need quick cash against your credit card in Bangalore or have questions, our dedicated team is here to assist you anytime, anywhere.
                                 </p>
@@ -141,7 +142,16 @@ export default function Home() {
 
             <div className="project-info-div">
                 <div className="col-md-12">
-                    <img src="/img/how-it-work.gif" className="img-fluid mb-3 d-block mx-auto py-3 " alt="" style={{ filter: 'drop-shadow(1px 1px 10px #ddd7d7)' }} />
+                <Image
+                  src="/img/how-it-work.gif"
+                  alt="How it works"
+                  layout="responsive" // Adjust as needed, 'intrinsic', 'fixed', or 'fill' can be used based on your requirement
+                  width={750} // Specify appropriate width
+                  height={800} // Specify appropriate height
+                  unoptimized // Disable optimization for animated GIFs
+                  data-aos="fade-right"
+                  data-aos-duration="1500"
+                />
                 </div>
             </div>
         </div>
