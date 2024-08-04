@@ -38,9 +38,9 @@ const Header = () => {
                             </li>
                         </ul>
                         <span className="navbar-text">
-                            <button type="button" className="left20 btn btn-white btn-primary d-md-block d-none" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            <a type="button" className="left20 btn btn-white btn-primary d-md-block d-none" data-bs-target="#exampleModal" data-bs-toggle="modal">
                                 Enquire Now
-                            </button>
+                            </a>
                         </span>
                     </div>
                 </div>

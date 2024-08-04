@@ -7,6 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/style.css'; // Import global CSS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import CommonModal from '../components/CommonModal';
 
 function MyApp({ Component, pageProps }) {  
   useEffect(() => {
@@ -22,11 +23,12 @@ function MyApp({ Component, pageProps }) {
   }, []);
   return (
     <>
-      <Header />
+      <Header />      
       <main>
         <Component {...pageProps} />
       </main>
       <Footer />
+      <CommonModal />
     </>
   );
 }

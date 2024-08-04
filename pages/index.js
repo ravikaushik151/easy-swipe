@@ -11,6 +11,7 @@ export default function Home() {
       <meta name="description" content="Description of the home page" />
     </Head>
     <section style={{marginTop : '80px'}}>
+      <div className='d-md-block d-none'>
         <Image src="/img/banner.jpg" className="w-100" alt="Easy Swipe" width={1920} height={827} />
         <a data-bs-target="#exampleModal1" data-bs-toggle="modal" title="" style={{
                 position: 'absolute',
@@ -21,6 +22,19 @@ export default function Home() {
                 zIndex: 2,
                 cursor: 'pointer',
               }}></a>
+      </div>
+      <div className='d-md-none d-block'>
+        <Image src="/img/m-banner.jpg" className="w-100" alt="Easy Swipe" width={390} height={684} />
+        <a data-bs-target="#exampleModal1" data-bs-toggle="modal" title="" style={{
+                position: 'absolute',
+                left: '33%',
+                top: '80%',
+                width: '35%',
+                height: '4%',
+                zIndex: 2,
+                cursor: 'pointer',
+              }}></a>
+        </div>
     </section>
     <Bank />
     <section className="same-gap bg-white">
@@ -31,7 +45,7 @@ export default function Home() {
                 </div>
 
                 <div className="col-md-6 text-center ">
-                    <Image src="/img/About-C2C.jpg" data-aos="fade-right" data-aos-duration="1500" alt="" className="img-fluid mb-2 p-3" width={705} height={429} />
+                    <Image src="/img/About-C2C.jpg" data-aos="fade-right" data-aos-duration="1500" alt="About" className="img-fluid mb-2 p-3" width={705} height={429} />
                 </div>
                 <div className="col-md-6  d-flex align-content-center align-items-center" data-aos="fade-left" data-aos-duration="1500">
                     <div>
@@ -39,10 +53,10 @@ export default function Home() {
                             <p className="mb-3 fs-3 fw-bold text-main"> Unlock Instant Financial Flexibility with Spot Cash Against Credit Card Services</p>
                         </div>
 
-                        <p className="text-justify lh-lg fs65">Are you in Bengaluru and need immediate cash? Look no further! At Easy Swipe, we specialize in providing fast and secure spot cash against credit cards, offering you an effortless solution to your financial needs. With our "Credit Card Swipe Cash" service, you can transfer money from your credit card to your bank account instantly.
+                        <p className="text-justify lh-lg fs65">Are you in Bengaluru and need immediate cash? Look no further! At Easy Swipe, we specialize in providing fast and secure spot cash against credit cards, offering you an effortless solution to your financial needs. With our &ldquo;Credit Card Swipe Cash&ldquo; service, you can transfer money from your credit card to your bank account instantly.
                         </p>
                         <p className="text-justify lh-lg fs65">
-                            Don't let financial emergencies catch you off guard. With Easy Swipe, getting cash from your credit card with one easy swipe has never been easier. Contact us today to find out how we can assist you in accessing instant cash when you need it most.
+                            Don&apos;t let financial emergencies catch you off guard. With Easy Swipe, getting cash from your credit card with one easy swipe has never been easier. Contact us today to find out how we can assist you in accessing instant cash when you need it most.
                         </p>
                     </div>
 
@@ -65,7 +79,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-right" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/Fast-Approval.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Fast-Approval.png" alt="Approval" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Swift Approval</p>
                                 <p className="text-dark">Get instant cash against your credit card with rapid approval! Our seamless process ensures you receive secure spot cash for your urgent needs in Bangalore, quickly and efficiently.
                                 </p>
@@ -76,7 +90,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/No-Hidden-Fees.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/No-Hidden-Fees.png" alt="Fees" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">No Hidden Fees</p>
                                 <p className="text-dark">Enjoy immediate cash against your credit card with complete transparency. We pride ourselves on a hassle-free process with no hidden fees, making it easy to access emergency funds.
                                 </p>
@@ -87,7 +101,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-left" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/Secure-Transaction.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Secure-Transaction.png" alt="Transaction" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Secure Transaction</p>
                                 <p className="text-dark">Trust in our secure transaction process. Easy Swipe offers instant cash against your credit card in Bangalore with guaranteed security, ensuring your financial safety at every step.
                                 </p>
@@ -98,7 +112,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-right" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/Low-Interest-Rate.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Low-Interest-Rate.png" alt="Interest" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Competitive Interest Rate</p>
                                 <p className="text-dark">Benefit from our low interest rate of just 2%*. We provide affordable and reliable financial assistance, offering quick cash against your credit card to meet your urgent needs.
                                 </p>
@@ -109,7 +123,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-up" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/Flexible-Repayment-Options.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/Flexible-Repayment-Options.png" alt="Repayment" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">Flexible Repayment Plans</p>
                                 <p className="text-dark">Take advantage of our flexible repayment options. Easy Swipe offers tailored solutions to fit your financial convenience, making it easier to manage your cash flow.
                                 </p>
@@ -120,7 +134,7 @@ export default function Home() {
                     <div className="col-12 col-md-4 col-lg-4 col-xl-4" data-aos="fade-left" data-aos-duration="1500">
                         <div className="project-info-item">
                             <div className="project-info-inner-div ">
-                                <Image src="/img/24x7.png" alt="" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
+                                <Image src="/img/24x7.png" alt="Customer" width={128} height={128} className="img-fluid d-block mx-auto mb-4" />
                                 <p className="fs-4 fw-bold text-main">24/7 Customer Support</p>
                                 <p className="text-dark">Access 24/7 customer support for all your needs. Whether you need quick cash against your credit card in Bangalore or have questions, our dedicated team is here to assist you anytime, anywhere.
                                 </p>
@@ -147,8 +161,8 @@ export default function Home() {
                   src="/img/how-it-work.gif"
                   alt="How it works"
                   layout="responsive" // Adjust as needed, 'intrinsic', 'fixed', or 'fill' can be used based on your requirement
-                  width={500} // Specify appropriate width
-                  height={600} // Specify appropriate height
+                  width={400} // Specify appropriate width
+                  height={400} // Specify appropriate height
                   unoptimized // Disable optimization for animated GIFs
                   data-aos="fade-right"
                   data-aos-duration="1500"
@@ -162,7 +176,7 @@ export default function Home() {
         <div className="container">
             <div className="row py-4">
                 <div className="title text-center">
-                    <h2 className="text-main">What Our Clients Say's</h2>
+                    <h2 className="text-main">What Our Clients Say&apos;s</h2>
                 </div>
             </div>
 
@@ -171,7 +185,7 @@ export default function Home() {
                     <div className="carousel-item active">
                         <div className="carousel-caption">
                             <p className="text-center text-white mb-0">
-                                "Easy Swipe this company is amazing with my emergency time they help to withdraw money from my HDFC credit card to bank account that doing such amazing work in Bangalore city for helping peoples and their charging very minimum fees 2% only I suggest this C2C Enterprises company for her Bangalore peoples emergency needs thank you Team Easy Swipe."
+                            &ldquo;Easy Swipe this company is amazing with my emergency time they help to withdraw money from my HDFC credit card to bank account that doing such amazing work in Bangalore city for helping peoples and their charging very minimum fees 2% only I suggest this C2C Enterprises company for her Bangalore peoples emergency needs thank you Team Easy Swipe.&ldquo;
                             </p>
                             <div id="image-caption" className="text-white text-center">
                                 <strong>Pranay Rao</strong>
@@ -183,7 +197,7 @@ export default function Home() {
                     <div className="carousel-item">
                         <div className="carousel-caption">
                             <p className="text-center text-white mb-0">
-                                "I used c2c cash transfer from credit card to bank account service to get cash against my Indusind bank credit card. its was soo easy and fast. i recommend this service. compared to cred or phone pay, Easy Swipe charges is affordable."
+                            &ldquo;I used c2c cash transfer from credit card to bank account service to get cash against my Indusind bank credit card. its was soo easy and fast. i recommend this service. compared to cred or phone pay, Easy Swipe charges is affordable.&ldquo;
                             </p>
                             <div id="image-caption" className="text-white text-center">
                                 <strong>Praveen GS</strong>
@@ -195,7 +209,7 @@ export default function Home() {
                     <div className="carousel-item">
                         <div className="carousel-caption">
                             <p className="text-center text-white mb-0">
-                                "Very helpful service and excellent coordination and quick transaction. I came for first time seeing google. Thank u judar and Raghu"
+                            &ldquo;Very helpful service and excellent coordination and quick transaction. I came for first time seeing google. Thank u judar and Raghu&ldquo;
                             </p>
                             <div id="image-caption" className="text-dark text-center">
                                 <strong>Kanchana Velu</strong>
@@ -218,7 +232,7 @@ export default function Home() {
         <div className="container">
             <div className="row">
                 <div className="title text-center">
-                    <h2 className="text-main">FAQ's</h2>
+                    <h2 className="text-main">FAQ&apos;s</h2>
                 </div>
                 <div className="col-lg-12">
                     <div className="tp-faq-tab-content tp-accordion">
@@ -232,7 +246,7 @@ export default function Home() {
                                 <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#general_accordion">
                                     <div className="accordion-body">
                                         <p>
-                                            To access cash against your credit card, you'll need to provide a digital copy of your PAN Card and Aadhar Card. For a detailed explanation of the process, please call us at +91-9513445002. We're here to assist you!
+                                            To access cash against your credit card, you&apos;ll need to provide a digital copy of your PAN Card and Aadhar Card. For a detailed explanation of the process, please call us at +91-9513445002. We&apos;re here to assist you!
                                         </p>
                                     </div>
                                 </div>
@@ -246,7 +260,7 @@ export default function Home() {
                                 <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#general_accordion">
                                     <div className="accordion-body">
                                         <p>
-                                            You have two convenient options to get cash against your credit card: either through our online service or by visiting our office in person. For a complete explanation of the process, call us at +91-9513445002. We’re here to guide you!
+                                            You have two convenient options to get cash against your credit card: either through our online service or by visiting our office in person. For a complete explanation of the process, call us at +91-9513445002. We&apos;re here to guide you!
                                         </p>
                                     </div>
                                 </div>
@@ -260,7 +274,7 @@ export default function Home() {
                                 <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#general_accordion">
                                     <div className="accordion-body">
                                         <p>
-                                            Yes, it is safe. Obtaining cash from your credit card is as secure as using it for purchases or bill payments. The cash will be instantly credited to your account. For more details on the process, call us at +91-9513445002. We’re here to assist you!
+                                            Yes, it is safe. Obtaining cash from your credit card is as secure as using it for purchases or bill payments. The cash will be instantly credited to your account. For more details on the process, call us at +91-9513445002. We&apos;re here to assist you!
                                         </p>
                                     </div>
                                 </div>
@@ -268,13 +282,13 @@ export default function Home() {
                             <div className="accordion-item">
                                 <h2 className="accordion-header" id="headingFour">
                                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                        4. What does "cash against a credit card" mean?
+                                        4. What does &ldquo;cash against a credit card&ldquo; mean?
                                     </button>
                                 </h2>
                                 <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#general_accordion">
                                     <div className="accordion-body">
                                         <p>
-                                            It means you can withdraw cash from your credit card's available balance. We simply swipe your card, and the funds are transferred to your account immediately. For a detailed explanation of the process, call us at +91-9513445002. We’re here to help!
+                                            It means you can withdraw cash from your credit card&apos;s available balance. We simply swipe your card, and the funds are transferred to your account immediately. For a detailed explanation of the process, call us at +91-9513445002. We&apos;re here to help!
                                         </p>
                                     </div>
                                 </div>
