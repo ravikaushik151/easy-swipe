@@ -11,7 +11,7 @@ const Footer = () => {
                             <div className="col-md-3 ps-3 mb-3 d-flex align-items-center justify-content-center">
                                 <div className="content">
                                     <div className="ftr-logo">
-                                        <Image src="/img/logo.png" className="mb-2 img-fluid px-3" alt="Logo" width={145} height={60} />
+                                        <Image src="/img/logo.png" className="mb-2 img-fluid px-3" alt="Logo" width={275} height={160} />
                                     </div>
                                     <p className="fs-5 fw-bold ps-2 footer-heading mb-3 mt-4 mt-lg-0 pt-3 text-center">FOLLOW US</p>
                                     <div className="ps-2 text-center">
