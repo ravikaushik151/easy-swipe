@@ -21,7 +21,6 @@ export default function Home() {
                 cursor: 'pointer',
               }}></a>
     </section>
-    <Bank />
     <section className="same-gap bg-white">
         <div className="container">
             <div className="row d-flex align-content-center justify-content-center">

@@ -3,8 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document';
 export default function Document() {
   return (
     <Html>
-      <Head>
-        <title>Easy Swipe</title>
+      <Head>        
         {/* Link to the favicon */}
         <link rel="icon" href="/favicon.ico" />
         {/* Add any other head elements here */}
