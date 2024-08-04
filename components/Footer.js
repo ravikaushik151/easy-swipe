@@ -1,5 +1,5 @@
 // components/Footer.js
-
+import Link from 'next/link';
 const Footer = () => {
     return (
         <footer className="mysec wow slideInUp" data-aos="fade-up" data-aos-duration="1500">
@@ -14,18 +14,18 @@ const Footer = () => {
                                     </div>
                                     <p className="fs-5 fw-bold ps-2 footer-heading mb-3 mt-4 mt-lg-0 pt-3 text-center">FOLLOW US</p>
                                     <div className="ps-2 text-center">
-                                        <a href="#" className="text-decoration-none text-main pe-2 fs-2">
+                                        <Link href="#" className="text-decoration-none text-main pe-2 fs-2">
                                             <i className="fa-brands fa-facebook"></i>
-                                        </a>
-                                        <a href="#" className="text-decoration-none text-main px-2 fs-2">
+                                        </Link>
+                                        <Link href="#" className="text-decoration-none text-main px-2 fs-2">
                                             <i className="fa-brands fa-instagram"></i>
-                                        </a>
-                                        <a href="#" className="text-decoration-none text-main px-2 fs-2">
+                                        </Link>
+                                        <Link href="#" className="text-decoration-none text-main px-2 fs-2">
                                             <i className="fa-brands fa-linkedin"></i>
-                                        </a>
-                                        <a href="#" className="text-decoration-none text-main px-2 fs-2">
+                                        </Link>
+                                        <Link href="#" className="text-decoration-none text-main px-2 fs-2">
                                             <i className="fa-brands fa-x-twitter"></i>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
@@ -35,9 +35,9 @@ const Footer = () => {
                                     <p className="fs-4 fw-bold">Contact Us</p>
                                     <ul className="ps-lg-4 ps-0 text-center d-inline mt-4">
                                         <li className="my-2">
-                                            <a href="tel:+919513445002" className="text-decoration-none text-main fs-6">
+                                            <Link href="tel:+919513445002" className="text-decoration-none text-main fs-6">
                                                 <i className="fa-solid fa-phone"></i> (+91) 951 344 5002
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li className="my-2">
                                             <p className="fs-6">
@@ -53,19 +53,19 @@ const Footer = () => {
                                     <p className="fs-4 fw-bold">Quick Links</p>
                                     <ul className="ps-lg-4 ps-0 text-center d-inline">
                                         <li>
-                                            <a href="./" className="text-decoration-none text-main lh fs-6">Home</a>
+                                            <Link href="./" className="text-decoration-none text-main lh fs-6">Home</Link>
                                         </li>
                                         <li>
-                                            <a href="/about" className="text-decoration-none text-main lh fs-6">About</a>
+                                            <Link href="/about" className="text-decoration-none text-main lh fs-6">About</Link>
                                         </li>
                                         <li>
-                                            <a href="/service" className="text-decoration-none text-main fs-6">Service</a>
+                                            <Link href="/service" className="text-decoration-none text-main fs-6">Service</Link>
                                         </li>
                                         <li>
-                                            <a href="/blog" className="text-decoration-none text-main fs-6">Blog</a>
+                                            <Link href="/blog" className="text-decoration-none text-main fs-6">Blog</Link>
                                         </li>
                                         <li>
-                                            <a href="/contact" className="text-decoration-none text-main fs-6">Contact</a>
+                                            <Link href="/contact" className="text-decoration-none text-main fs-6">Contact</Link>
                                         </li>
                                     </ul>
                                 </div>
