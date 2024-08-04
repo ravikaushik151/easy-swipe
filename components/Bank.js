@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import 'swiper/css';
 import 'swiper/css/autoplay';
@@ -26,7 +27,7 @@ const Bank = () => {
             <Swiper
               spaceBetween={10}
               slidesPerView={5}
-              autoplay={{ delay: 3000 }}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               loop={true}
               breakpoints={{
                 0: { slidesPerView: 1 },
@@ -36,9 +37,9 @@ const Bank = () => {
             >
               {items.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <a data-fancybox={`gallery-${index}`} href={item.src} data-expand="-1">
+                  <Link href={item.src} data-fancybox={`gallery-${index}`} data-expand="-1">
                     <Image src={item.src} alt={item.alt} className="img-fluid" width={140} height={56} />
-                  </a>
+                  </Link>
                 </SwiperSlide>
               ))}
             </Swiper>
