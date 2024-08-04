@@ -1,23 +1,24 @@
 // pages/_app.js
+import React, { useEffect } from 'react';
+import 'aos/dist/aos.css'; // Import AOS styles
+import AOS from 'aos';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import '../styles/style.css'; // Import global CSS
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import '@fancyapps/fancybox/dist/jquery.fancybox.css';
-import { useEffect } from 'react';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {  
   useEffect(() => {
-    // Load jQuery
-    import('jquery').then($ => {
-      window.$ = $;
-      window.jQuery = $;
-
-      // Load Fancybox JavaScript
-      import('@fancyapps/fancybox').then(Fancybox => {
-        // Optionally initialize Fancybox here if needed
-      }).catch(err => console.error('Error loading Fancybox:', err));
-    }).catch(err => console.error('Error loading jQuery:', err));
+    // Initialize AOS
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Whether animation should happen only once while scrolling down
+      mirror: false, // Whether elements should animate out while scrolling past them
+    });
+    import('bootstrap/dist/js/bootstrap.bundle.min.js').then((Bootstrap) => {
+      // Initialize Bootstrap carousel (if necessary)
+    });
   }, []);
   return (
     <>
