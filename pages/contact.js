@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>Blog Page</title>
+                <title>Contact Page</title>
                 <meta name="description" content="Description of the home page" />
             </Head>
             <section className="custom-header" style={{ background: "url('/img/contactus-header.jpg')" }}></section>
