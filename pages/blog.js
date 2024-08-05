@@ -109,7 +109,7 @@ export default function Blog() {
                                                 </Link>
                                             </h4>
                                             <p>
-                                                Financial emergencies can strike unexpectedly, leaving you in urgent need of funds. Whether it's a medical emergency, sudden car repair, or any unforeseen expense, having access to quick...
+                                                Financial emergencies can strike unexpectedly, leaving you in urgent need of funds. Whether it&#39;s a medical emergency, sudden car repair, or any unforeseen expense, having access to quick...
                                             </p>
                                             <Link href="how-cash-against-credit-card-services-can-help-in-financial-emergencies" className="btn btn-danger text-white">Read More</Link>
                                         </div>
