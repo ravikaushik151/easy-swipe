@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+body {
+  overflow-x: hidden;
+}
+
 .text-justify {
   text-align: justify !important;
 }
@@ -699,7 +703,7 @@ footer ul li a {
 
 .project-video-section {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/img/banner-1.webp") no-repeat;
+    url("/img/banner-1.webp") no-repeat;
   background-size: cover;
 
   background-size: cover;
@@ -746,407 +750,407 @@ footer ul li a {
 
 @media only screen and (max-width: 1400px) {
   .menu ul li a {
-      font-size: 16px;
-      padding: 10px 10px;
+    font-size: 16px;
+    padding: 10px 10px;
   }
 
   .contact-number a {
-      font-size: 30px;
+    font-size: 30px;
   }
 }
 
 @media only screen and (max-width: 1250px) {
   .menu ul li a {
-      font-size: 15px;
-      padding: 10px 10px;
+    font-size: 15px;
+    padding: 10px 10px;
   }
 
   .contact-number a {
-      font-size: 28px;
+    font-size: 28px;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   .contact-number a {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .menu ul li a {
-      font-size: 14px;
-      padding: 10px 5px;
+    font-size: 14px;
+    padding: 10px 5px;
   }
 
   .contact-number a {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .logo {
-      max-width: 160px;
+    max-width: 160px;
   }
 
   .banner-section {
-      padding-top: 66px;
+    padding-top: 66px;
   }
 
   .banner-text-div h1 {
-      font-size: 30px;
-      margin-bottom: 10px;
-      line-height: 40px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    line-height: 40px;
   }
 
   .banner-text-div h6 {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .starting-price {
-      font-size: 24px;
-      margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
 
   .btn {
-      padding: 10px 12px;
-      font-size: 16px;
+    padding: 10px 12px;
+    font-size: 16px;
   }
 
   .highlights-item {
-      padding: 15px;
+    padding: 15px;
   }
 
   .location-advantage-text-itm {
-      height: 90%;
+    height: 90%;
   }
 
   .location-advantage-text-itm-right h5 {
-      margin: 0;
+    margin: 0;
   }
 
   .price-section tr td .btn {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .title h1 {
-      font-size: 30px;
+    font-size: 30px;
   }
 
   .same-gap {
-      padding: 20px 0;
+    padding: 20px 0;
   }
 }
 
 @media only screen and (max-width: 991px) {
   .button_container {
-      position: absolute;
-      top: 50%;
-      right: 0;
-      height: 29px;
-      width: 35px;
-      cursor: pointer;
-      z-index: 100;
-      transition: opacity 0.25s ease;
-      transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 29px;
+    width: 35px;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.25s ease;
+    transform: translateY(-50%);
   }
 
   .button_container span {
-      background: #fff;
-      border: 0;
-      height: 5px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      transition: all 0.35s ease;
-      cursor: pointer;
+    background: #fff;
+    border: 0;
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.35s ease;
+    cursor: pointer;
   }
 
   .button_container span:nth-of-type(2) {
-      top: 11px;
+    top: 11px;
   }
 
   .button_container span:nth-of-type(3) {
-      top: 22px;
+    top: 22px;
   }
 
   .contact-number a {
-      padding: 0;
-      position: absolute;
-      right: 50px;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: transparent;
-      color: #fff;
-      font-size: 18px;
+    padding: 0;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #fff;
+    font-size: 18px;
   }
 
   @-webkit-keyframes widgetPulse {
-      0% {
-          -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-          opacity: 1;
-      }
+    0% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 1;
+    }
 
-      100% {
-          -webkit-transform: scale(1.8, 1.8);
-          transform: scale(1.8, 1.8);
-          opacity: 0;
-      }
+    100% {
+      -webkit-transform: scale(1.8, 1.8);
+      transform: scale(1.8, 1.8);
+      opacity: 0;
+    }
   }
 
   @keyframes widgetPulse2 {
-      0% {
-          -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-          opacity: 1;
-      }
+    0% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      opacity: 1;
+    }
 
-      100% {
-          -webkit-transform: scale(1.4, 1.4);
-          transform: scale(1.4, 1.4);
-          opacity: 0;
-      }
+    100% {
+      -webkit-transform: scale(1.4, 1.4);
+      transform: scale(1.4, 1.4);
+      opacity: 0;
+    }
   }
 
   .overlay {
-      position: fixed;
-      background: #fff;
-      top: 64px;
-      left: 0;
-      width: 100%;
-      -webkit-transform: scaleY(0);
-      -ms-transform: scaleY(0);
-      transform: scaleY(0);
-      max-height: 0;
-      -webkit-transition: max-height 0.3s, -webkit-transform 0.3s;
-      transition: max-height 0.3s, -webkit-transform 0.3s;
-      -o-transition: max-height 0.3s, transform 0.3s;
-      transition: max-height 0.3s, transform 0.3s;
-      transition: max-height 0.3s, transform 0.3s, -webkit-transform 0.3s;
-      -webkit-transform-origin: top;
-      -ms-transform-origin: top;
-      transform-origin: top;
-      overflow: auto;
+    position: fixed;
+    background: #fff;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    -webkit-transform: scaleY(0);
+    -ms-transform: scaleY(0);
+    transform: scaleY(0);
+    max-height: 0;
+    -webkit-transition: max-height 0.3s, -webkit-transform 0.3s;
+    transition: max-height 0.3s, -webkit-transform 0.3s;
+    -o-transition: max-height 0.3s, transform 0.3s;
+    transition: max-height 0.3s, transform 0.3s;
+    transition: max-height 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transform-origin: top;
+    -ms-transform-origin: top;
+    transform-origin: top;
+    overflow: auto;
   }
 
   .overlay nav {
-      text-align: center;
+    text-align: center;
   }
 
   .overlay ul {
-      list-style: none;
-      padding: 0;
-      margin: 0 auto;
-      display: inline-block;
-      position: relative;
-      width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
   }
 
   .overlay ul li {
-      display: block;
-      position: relative;
-      opacity: 0;
-      margin: 0;
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin: 0;
   }
 
   .overlay ul li a,
   .overlay ul li span {
-      display: block;
-      position: relative;
-      color: #000;
-      text-decoration: none;
-      overflow: hidden;
-      font-size: 18px;
+    display: block;
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 18px;
   }
 
   .overlay.open li {
-      -webkit-animation: fadeInRight 0.5s ease forwards;
-      animation: fadeInRight 0.5s ease forwards;
-      animation-delay: 0s;
-      animation-delay: 0s;
-      animation-delay: 0s;
-      -webkit-animation-delay: 0.35s;
-      animation-delay: 0.35s;
-      opacity: 1;
-      border-bottom: 1px solid gray;
+    -webkit-animation: fadeInRight 0.5s ease forwards;
+    animation: fadeInRight 0.5s ease forwards;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0.35s;
+    animation-delay: 0.35s;
+    opacity: 1;
+    border-bottom: 1px solid gray;
   }
 
   .button_container.active .top {
-      transform: translateY(11px) translateX(0) rotate(45deg);
-      background: #fff;
+    transform: translateY(11px) translateX(0) rotate(45deg);
+    background: #fff;
   }
 
   .button_container.active .middle {
-      opacity: 0;
-      background: #fff;
+    opacity: 0;
+    background: #fff;
   }
 
   .button_container.active .bottom {
-      transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: #fff;
+    transform: translateY(-11px) translateX(0) rotate(-45deg);
+    background: #fff;
   }
 
   .overlay.open {
-      -webkit-transform: scaleY(1);
-      -ms-transform: scaleY(1);
-      transform: scaleY(1);
-      max-height: 100vh;
+    -webkit-transform: scaleY(1);
+    -ms-transform: scaleY(1);
+    transform: scaleY(1);
+    max-height: 100vh;
   }
 
   .location-advantage-img {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .contact-buttons ul li a span {
-      display: block;
+    display: block;
   }
 
   .contact-buttons {
-      left: 0;
-      bottom: 0;
-      width: 100%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   .contact-buttons ul {
-      display: flex;
+    display: flex;
   }
 
   .contact-buttons ul li {
-      margin: 0;
-      width: 50%;
+    margin: 0;
+    width: 50%;
   }
 
   .contact-buttons ul li a {
-      height: 50px;
-      border-radius: 0;
-      width: 100%;
+    height: 50px;
+    border-radius: 0;
+    width: 100%;
   }
 
   .contact-buttons ul li a img {
-      margin: 0 10px 0 0;
-      max-width: 25px;
-      height: auto;
+    margin: 0 10px 0 0;
+    max-width: 25px;
+    height: auto;
   }
 
   footer {
-      padding-bottom: 60px;
+    padding-bottom: 60px;
   }
 
   .title h1 {
-      font-size: 25px;
+    font-size: 25px;
   }
 
   .banner-text-div h1 {
-      font-size: 25px;
-      margin-bottom: 10px;
-      line-height: 35px;
+    font-size: 25px;
+    margin-bottom: 10px;
+    line-height: 35px;
   }
 
   .starting-price {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .side-enquire-now {
-      display: none;
+    display: none;
   }
 
   .contact-number {
-      display: none;
+    display: none;
   }
 }
 
 @media only screen and (max-width: 767px) {
 
   .navbar-toggler-icon {
-      filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(21%) hue-rotate(332deg) brightness(106%) contrast(105%) !important;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(21%) hue-rotate(332deg) brightness(106%) contrast(105%) !important;
   }
 
   .table-bordered td,
   .table-bordered th {
-      border: 1px solid;
-      color: #fff;
-      font-size: 14px;
+    border: 1px solid;
+    color: #fff;
+    font-size: 14px;
   }
 
   .typology,
   .price-major,
   .price-details {
-      color: #fff;
+    color: #fff;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .contact-buttons ul li a {
-      height: 35px;
-      padding: 0;
+    height: 35px;
+    padding: 0;
   }
 
   .contact-buttons ul li a img {
-      max-width: 20px;
+    max-width: 20px;
   }
 
   .contact-buttons ul li a span {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .banner-text-div h1 br {
-      display: none;
+    display: none;
   }
 
   .banner-text-div h1 {
-      font-size: 20px;
-      line-height: 25px;
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .starting-price {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .btn {
-      padding: 10px;
-      font-size: 14px;
+    padding: 10px;
+    font-size: 14px;
   }
 
   .starting-price img {
-      max-width: 22px;
+    max-width: 22px;
   }
 
   .logo {
-      max-width: 130px;
+    max-width: 130px;
   }
 
   .contact-number a {
-      font-size: 16px;
-      right: 40px;
+    font-size: 16px;
+    right: 40px;
   }
 
   .banner-section {
-      padding-top: 58px;
+    padding-top: 58px;
   }
 
   .highlights-content p {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .project-info-inner-div h4 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .mobile-price {
-      display: block;
+    display: block;
   }
 
   .price-section .price-box {
-      margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 
   .price-section .price-details {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .price-section .typology {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .overlay {
-      top: 58px;
+    top: 58px;
   }
 }
 
@@ -1314,8 +1318,8 @@ h6 {
 
 .bg-dark {
   background: linear-gradient(156deg,
-          rgba(42, 0, 124, 1) 20%,
-          rgba(191, 63, 36, 1) 80%);
+      rgba(42, 0, 124, 1) 20%,
+      rgba(191, 63, 36, 1) 80%);
 }
 
 .bg-light {
@@ -1421,15 +1425,15 @@ About page
 
 @media(max-width:767px) {
   #demo .carousel-caption {
-      position: initial;
-      z-index: 10;
-      padding: 3rem 2rem;
+    position: initial;
+    z-index: 10;
+    padding: 3rem 2rem;
 
-      text-align: center;
+    text-align: center;
 
-      font-style: italic;
-      font-weight: 600;
-      line-height: 1.5rem
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.5rem
   }
 }
 
@@ -1441,9 +1445,9 @@ About page
 
 @media(max-width:767px) {
   #demo .carousel-caption img {
-      width: 4rem;
-      border-radius: 4rem;
-      margin-top: 1rem
+    width: 4rem;
+    border-radius: 4rem;
+    margin-top: 1rem
   }
 }
 
@@ -1455,7 +1459,7 @@ About page
 
 @media(max-width:767px) {
   #image-caption {
-      font-style: normal;
+    font-style: normal;
 
   }
 }
@@ -1482,15 +1486,15 @@ About page
 
 @media(max-width:767px) {
   #demo i {
-      padding: 0.8rem
+    padding: 0.8rem
   }
 
   #demo .carousel-control-prev {
-      left: -10px !important;
+    left: -10px !important;
   }
 
   #demo .carousel-control-next {
-      right: -10px !important;
+    right: -10px !important;
   }
 }
 
@@ -1651,21 +1655,21 @@ About page
 
 @media only screen and (min-width: 769px) {
   .mobile {
-      display: none !important;
+    display: none !important;
   }
 
   .desktop {
-      display: block !important;
+    display: block !important;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .mobile {
-      display: block !important;
+    display: block !important;
   }
 
   .desktop {
-      display: none !important;
+    display: none !important;
   }
 
 }
@@ -1730,32 +1734,32 @@ About page
 
 @media only screen and (min-width:768px) {
   .custom-header {
-      padding: 258px 0;
-      background-repeat: no-repeat !important;
-      background-size: cover !important;
-      margin-top: 80px;
-      background-position: bottom !important
+    padding: 258px 0;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin-top: 80px;
+    background-position: bottom !important
   }
 }
 
 @media only screen and (max-width:768px) {
   .custom-header {
-      padding: 100px 0 !important;
-      background-repeat: no-repeat !important;
-      background-size: cover !important;
-      margin-top: 72px !important;
-      background-position: bottom !important
+    padding: 100px 0 !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    margin-top: 72px !important;
+    background-position: bottom !important
   }
 
   .carousel-caption {
-      z-index: 99;
-      top: 18%
+    z-index: 99;
+    top: 18%
   }
 }
 
 @media only screen and (min-width:1280px) and (max-width:1450px) {
   .nav-item a {
-      margin: 0 5px;
+    margin: 0 5px;
   }
 }
 
