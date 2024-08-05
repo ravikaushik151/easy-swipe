@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
     <Head>
-      <title>Home Page Title</title>
+      <title>Home Page</title>
       <meta name="description" content="Description of the home page" />
     </Head>
     <section style={{marginTop : '80px'}}>
