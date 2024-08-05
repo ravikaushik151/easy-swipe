@@ -48,7 +48,6 @@ export default function Contact() {
                           Feel Free to contact us any time. We will get back to you as soon as we can!.
                         </p>
                         <form id="contact-form" onSubmit={handleSubmit(onSubmit)}>
-                          <div id="contact-note"></div>
                           <input
                             type="text"
                             className={`form-control form-group mb-3 ${errors.name ? 'is-invalid' : ''}`}
@@ -65,13 +64,27 @@ export default function Contact() {
                           />
                           {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
 
-                          <input
+                        <input
                             type="tel"
                             className={`form-control form-group mb-3 ${errors.phone ? 'is-invalid' : ''}`}
                             placeholder="Mobile"
-                            {...register('phone', { required: 'Mobile number is required' })}
-                          />
-                          {errors.phone && <div className="invalid-feedback">{errors.phone.message}</div>}
+                            {...register('phone', { 
+                                required: 'Mobile number is required',
+                                minLength: {
+                                value: 10,
+                                message: 'Mobile number must be exactly 10 digits'
+                                },
+                                maxLength: {
+                                value: 10,
+                                message: 'Mobile number must be exactly 10 digits'
+                                },
+                                pattern: {
+                                value: /^[0-9]{10}$/,
+                                message: 'Mobile number must be exactly 10 numeric digits'
+                                }
+                            })}
+                        />
+                            {errors.phone && <div className="invalid-feedback">{errors.phone.message}</div>}
 
                           <textarea
                             className={`form-control form-group mb-3 ${errors.message ? 'is-invalid' : ''}`}

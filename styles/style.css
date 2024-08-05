@@ -2127,3 +2127,6 @@ button.contact_form_submit {
   .contact_field {padding:15px }
   .right_conatct_social_icon  {display: none !important;}
 }
+.btn-close{
+  float: right;
+}

@@ -1,5 +1,6 @@
 // pages/blog/[slug]/index.js
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 import Head from 'next/head';
 import { posts } from '../../../data/posts';
 
@@ -44,7 +45,7 @@ const BlogPost = ({ post }) => {
                                 <h2 className="text-main fs-2 fw-bold my-4">{post.title}</h2>
                             </div>
                             <div>
-                                <img src={post.image} className="w-100" alt={post.title} />
+                                <Image src={post.image} className="w-100" alt={post.title} width={1296} height={607} />
                             </div>
                             <div className="py-3">
                                 <div dangerouslySetInnerHTML={{ __html: post.content }} />

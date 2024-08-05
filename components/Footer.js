@@ -1,7 +1,32 @@
 // components/Footer.js
 import Link from 'next/link';
 import Image from 'next/image';
+import { useForm } from 'react-hook-form';
 const Footer = () => {
+
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+      if (result.success) {
+        alert('Email sent successfully!');
+      } else {
+        alert('Failed to send email.');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      alert('Error sending email.');
+    }
+  };
     return (
         <footer className="mysec wow slideInUp" data-aos="fade-up" data-aos-duration="1500">
             <div className="container footer">
@@ -75,30 +100,66 @@ const Footer = () => {
                             <div className="col-md-4 ps-3 text-left mb-3 d-flex justify-content-center align-items-center">
                                 <div className="content">
                                     <p className="mb-3 fs-4 fw-bold text-main">Enquire Now</p>
-                                    <form id="footer-form" style={{ paddingTop: '10px' }}>
-                                        <div id="footer-note"></div>
+                                    <form id="footer-form" onSubmit={handleSubmit(onSubmit)} style={{ paddingTop: '10px' }}>
                                         <div className="row my-3">
-                                            <div className="box col-6">
-                                                <input type="text" className="form-control rounded-0 bg-whie text-main" name="name" placeholder="Name" />
-                                            </div>
-                                            <div className="box col-6">
-                                                <input type="email" className="form-control rounded-0 bg-whie text-main" name="email" placeholder="Email" />
-                                            </div>
+                                        <div className="box col-6">
+                                        <input
+                                            type="text"
+                                            className={`form-control form-group mb-3 ${errors.name ? 'is-invalid' : ''}`}
+                                            placeholder="Name"
+                                            {...register('name', { required: 'Name is required' })}
+                                        />
+                                        {errors.name && <div className="invalid-feedback">{errors.name.message}</div>}
+                                        </div>
+                                        <div className="box col-6">
+                                        <input
+                                            type="email"
+                                            className={`form-control form-group mb-3 ${errors.email ? 'is-invalid' : ''}`}
+                                            placeholder="Email"
+                                            {...register('email', { required: 'Email is required', pattern: { value: /^\S+@\S+$/i, message: 'Invalid email address' } })}
+                                        />
+                                        {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
+                                        </div>
                                         </div>
                                         <div className="row my-3">
-                                            <div className="box col-12">
-                                                <input type="text" className="form-control rounded-0 bg-whie text-main" name="phone" placeholder="Mobile" />
-                                            </div>
+                                        <div className="box col-12">
+                                        <input
+                                            type="tel"
+                                            className={`form-control form-group mb-3 ${errors.phone ? 'is-invalid' : ''}`}
+                                            placeholder="Mobile"
+                                            {...register('phone', { 
+                                                required: 'Mobile number is required',
+                                                minLength: {
+                                                value: 10,
+                                                message: 'Mobile number must be exactly 10 digits'
+                                                },
+                                                maxLength: {
+                                                value: 10,
+                                                message: 'Mobile number must be exactly 10 digits'
+                                                },
+                                                pattern: {
+                                                value: /^[0-9]{10}$/,
+                                                message: 'Mobile number must be exactly 10 numeric digits'
+                                                }
+                                            })}
+                                        />
+                                        {errors.phone && <div className="invalid-feedback">{errors.phone.message}</div>}
+                                        </div>
                                         </div>
                                         <div className="row my-3">
-                                            <div className="box-inner">
-                                                <textarea className="form-control bg-whie text-main" name="message" placeholder="Enter Message" rows="2"></textarea>
-                                            </div>
+                                        <div className="box-inner">
+                                        <textarea
+                                            className={`form-control form-group mb-3 ${errors.message ? 'is-invalid' : ''}`}
+                                            placeholder="Message"
+                                            {...register('message', { required: 'Message is required' })}
+                                        />
+                                        {errors.message && <div className="invalid-feedback">{errors.message.message}</div>}
+                                        </div>
                                         </div>
                                         <div className="row my-3">
-                                            <div className="box-inner">
-                                                <button type="submit" className="btn btn-danger submit-btn" id="footer-button">Submit</button>
-                                            </div>
+                                        <div className="box-inner">
+                                            <button type="submit" className="btn btn-danger submit-btn" id="footer-button">Submit</button>
+                                        </div>
                                         </div>
                                     </form>
                                 </div>
