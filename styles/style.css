@@ -1778,6 +1778,7 @@ About page
   opacity: 1;
   transform: translateY(0);
 }
+
 .services-content a {
   color: #003366;
   text-decoration: none;
@@ -1838,13 +1839,13 @@ About page
 
 @media (max-width: 1199.98px) {
   .services__thumb-four {
-      width: 300px;
+    width: 300px;
   }
 }
 
 @media (max-width: 991.98px) {
   .services__thumb-four {
-      width: 100%;
+    width: 100%;
   }
 }
 
@@ -1861,7 +1862,7 @@ About page
 
 @media (max-width: 1199.98px) {
   .services__thumb-four img {
-      height: 340px;
+    height: 340px;
   }
 }
 
@@ -1989,6 +1990,7 @@ About page
   -webkit-animation: hoverShine 1.2s;
   animation: hoverShine 1.2s;
 }
+
 .right_conatct_social_icon {
   background: #F6EBE7;
 }
@@ -2122,11 +2124,26 @@ button.contact_form_submit {
   border-radius: 30px;
   overflow: hidden;
 }
+
 @media only screen and (max-width:768px) {
-  .contact_info_sec {position: relative;width: 100%;}
-  .contact_field {padding:15px }
-  .right_conatct_social_icon  {display: none !important;}
+  .contact_info_sec {
+    position: relative;
+    width: 100%;
+  }
+
+  .contact_field {
+    padding: 15px
+  }
+
+  .right_conatct_social_icon {
+    display: none !important;
+  }
 }
-.btn-close{
+
+.btn-close {
   float: right;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(23%) hue-rotate(225deg) brightness(104%) contrast(100%);
 }
