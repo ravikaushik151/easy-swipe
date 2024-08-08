@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <>  
+        <>
             <Head>
                 <title>About Page</title>
                 <meta name="description" content="Description of the home page" />

@@ -2147,3 +2147,88 @@ button.contact_form_submit {
 .accordion-button:not(.collapsed)::after {
   filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(23%) hue-rotate(225deg) brightness(104%) contrast(100%);
 }
+
+.form-group {
+  position: relative;
+}
+
+
+.custom-blue {
+  background-color: rgba(239, 246, 255);
+}
+
+.form-input {
+  border: 2px solid #042785 !important;
+  /* Navy blue border */
+  border-radius: 0.5rem;
+  padding-left: 3.5rem;
+  /* Space for icons */
+  height: 3rem;
+  /* Increased input height */
+  box-shadow: none;
+}
+
+.form-input:focus {
+  border-color: #042785;
+  box-shadow: 0 0 0 2px rgba(4, 39, 133, 0.3);
+  /* Subtle navy blue shadow */
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  /* Space between icon and input edge */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #042785;
+  /* Icon color */
+  font-size: 1.25rem;
+  /* Icon size */
+}
+
+.form-checkbox:checked {
+  background-color: #FE0000;
+  /* Red color for checked state */
+  border-color: #FE0000;
+  /* Red border for checkbox */
+}
+
+.form-checkbox:focus {
+  border-color: #FE0000;
+  /* Red border on focus */
+}
+
+.bg-primary {
+  background-color: #042785;
+  /* Navy blue background */
+}
+
+.text-primary {
+  color: #042785;
+  /* Navy blue text */
+}
+
+.text-danger {
+  color: #FE0000;
+  /* Red text */
+}
+
+.button-primary {
+  background-color: #042785;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button-primary:hover {
+  background-color: #033569;
+}
+
+.form-heading {
+  color: #042785;
+  font-size: 2rem;
+  font-weight: bold;
+}

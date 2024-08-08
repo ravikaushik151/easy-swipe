@@ -61,46 +61,46 @@ export default function Service() {
                             <div className="p-3">
                                 <div className="row">
                                     {[
-                                    {
-                                    src: '/img/Transfer-Money-from-Credit-Card.jpg',
-                                    text: 'Transfer Money from Credit Card to Bank Account Online: Seamlessly move funds from your credit card to your bank account with our secure online service. Whether you need to transfer ₹1,000 or ₹10,000, we make the process quick and hassle-free.',
-                                    },
-                                    {
-                                    src: '/img/Credit-Card-Swipe-for-Cash.jpg',
-                                    text: 'Credit Card Swipe for Cash: Convert your credit card limit into instant cash through our simple swipe process. This service is ideal for immediate financial needs, offering a quick way to access cash without any delays.',
-                                    },
-                                    {
-                                    src: '/img/Cash-Withdrawal-from-Credit-Card.jpg',
-                                    text: 'Cash Withdrawal from Credit Card in Bangalore: Access cash directly from your credit card with our efficient withdrawal service. Available across Bangalore, this option ensures you can get the funds you need quickly and securely.',
-                                    },
-                                    {
-                                    src: '/img/Spot-Cash-Against-Credit-Card-in-Bangalore.jpg',
-                                    text: 'Spot Cash Against Credit Card in Bangalore: Obtain spot cash against your credit card limit with ease. Our service provides a fast and reliable way to get cash when you\'re in a pinch, available throughout Bangalore.',
-                                    },
-                                    {
-                                    src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
-                                    text: 'Send Money to Bank Account from Credit Card: Transfer money from your credit card to your bank account effortlessly. Whether you need to send ₹1,000 or ₹100,000, we offer flexible options to suit your financial needs.',
-                                    },
-                                    {
-                                    src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
-                                    text: 'Flexible Repayment Options: Enjoy the convenience of flexible repayment plans tailored to fit your financial situation. We provide manageable repayment terms that allow you to pay back the borrowed amount without straining your budget.',
-                                    },
+                                        {
+                                            src: '/img/Transfer-Money-from-Credit-Card.jpg',
+                                            text: 'Transfer Money from Credit Card to Bank Account Online: Seamlessly move funds from your credit card to your bank account with our secure online service. Whether you need to transfer ₹1,000 or ₹10,000, we make the process quick and hassle-free.',
+                                        },
+                                        {
+                                            src: '/img/Credit-Card-Swipe-for-Cash.jpg',
+                                            text: 'Credit Card Swipe for Cash: Convert your credit card limit into instant cash through our simple swipe process. This service is ideal for immediate financial needs, offering a quick way to access cash without any delays.',
+                                        },
+                                        {
+                                            src: '/img/Cash-Withdrawal-from-Credit-Card.jpg',
+                                            text: 'Cash Withdrawal from Credit Card in Bangalore: Access cash directly from your credit card with our efficient withdrawal service. Available across Bangalore, this option ensures you can get the funds you need quickly and securely.',
+                                        },
+                                        {
+                                            src: '/img/Spot-Cash-Against-Credit-Card-in-Bangalore.jpg',
+                                            text: 'Spot Cash Against Credit Card in Bangalore: Obtain spot cash against your credit card limit with ease. Our service provides a fast and reliable way to get cash when you\'re in a pinch, available throughout Bangalore.',
+                                        },
+                                        {
+                                            src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
+                                            text: 'Send Money to Bank Account from Credit Card: Transfer money from your credit card to your bank account effortlessly. Whether you need to send ₹1,000 or ₹100,000, we offer flexible options to suit your financial needs.',
+                                        },
+                                        {
+                                            src: '/img/Send-Money-to-Bank-Account-from-Credit.jpg',
+                                            text: 'Flexible Repayment Options: Enjoy the convenience of flexible repayment plans tailored to fit your financial situation. We provide manageable repayment terms that allow you to pay back the borrowed amount without straining your budget.',
+                                        },
                                     ].map((item, index) => (
-                                    <div className="col-md-4 mb-3" key={index}>
-                                        <div className="services-item shine-animate-item bg-white">
-                                            <div className="services-thumb">
-                                                <a className="shine-animate" href="#">
-                                                    <Image src={item.src} alt="" width={392} height={271} />
-                                                </a>
-                                            </div>
-                                            <div className="services-content">
-                                                <div className="icon">
-                                                    <i className="fa-solid fa-barcode"></i>
+                                        <div className="col-md-4 mb-3" key={index}>
+                                            <div className="services-item shine-animate-item bg-white">
+                                                <div className="services-thumb">
+                                                    <a className="shine-animate" href="#">
+                                                        <Image src={item.src} alt="" width={392} height={271} />
+                                                    </a>
                                                 </div>
-                                                <p>{item.text}</p>
+                                                <div className="services-content">
+                                                    <div className="icon">
+                                                        <i className="fa-solid fa-barcode"></i>
+                                                    </div>
+                                                    <p>{item.text}</p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     ))}
                                 </div>
                             </div>
